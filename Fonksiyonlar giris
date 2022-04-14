@@ -1,0 +1,20 @@
+#include<stdio.h>
+void hatayibas(int hata){
+
+printf("Hata kodu %d",hata);
+}
+int main(){
+
+printf("Lutfen negatif olmayan bir sayi giriniz:");
+
+if(sayi<0){
+
+hatayibas(404) ;
+}
+
+else {
+
+printf("Tebrikler");
+}
+return 0 ;
+}
