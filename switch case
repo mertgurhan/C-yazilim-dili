@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include<math.h>
+int main(void){
+   
+    float kenar,alan,kenar2;
+    char kar;
+    printf("Harf secin:"); scanf("%c",&kar);
+    
+    
+    switch(kar){
+            
+            
+        case'K':
+        case'k':
+            printf("Kare alani hesaplanicak:");
+            
+            
+            
+            
+            
+            printf("\nKenar uzunlugu yazininz:\n"); scanf("%f",&kenar);
+            
+            alan=pow(kenar,2);
+            printf("\nAlaniniz %f\n",alan);
+            
+            
+            break;
+            
+            
+        case'D':
+        case'd':
+            
+            printf("\nDikdortgen alani hesaplanicak:\n");
+            
+            printf("Kisa kenar giriniz:"); scanf("%f",&kenar);
+            printf("Uzun kenar giriniz:"); scanf("%f",&kenar2);
+            alan=kenar*kenar2;
+            
+            printf("Alanininz= %f",alan);
+            
+            break;
+            
+        default:
+            printf("Yanlis harf sectiniz");
+            
+            
+            
+    }
+    
+    
+    
+    return 0 ;
+}
