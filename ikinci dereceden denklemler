@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include<math.h>
+int main(void){
+   
+    float a,b,c;
+    float dis,x1,x2,kok;
+    printf("Denkelmin koklerini giriniz:"); scanf("%f %f %f",&a,&b,&c);
+    
+    dis=pow(b,2)-(4*a*c);
+    
+    if(dis<0)
+            
+            printf("Denklemin reel koku yoktur");
+        
+    else  if(dis>0){
+        printf("İki reel koku vardir:\n");
+        
+        x1=(-b-sqrt(dis))/(2*a);
+        x2=(-b+sqrt(dis))/(2*a);
+        
+        printf("Birinci kokunuz:%f\n Ikıncı kokunuz: %f",x1,x2);
+    }
+    else{
+        printf("Cakisik kok vardir");
+        
+        kok=-(b/2*a);
+        
+        printf("Kok:%f",kok);
+    }
+    return 0 ;
+}
