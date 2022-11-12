@@ -1,8 +1,6 @@
 #include<stdio.h>
 #include<math.h>
 #define PI 3.14
-
-
 int main(void){
 
     int sayi;
@@ -21,9 +19,6 @@ int main(void){
             printf("\nHacim icin:(h,H) Alan icin:(a,A) ");
             scanf("%c",&harf);
             
-            
-            
-            
             if((harf=='a') || (harf=='A')){
                 printf("Alan hesaplanicak !"); printf("\nKenar uzunlugu giriniz:"); scanf("%lf",&kenar);
                 
@@ -31,7 +26,6 @@ int main(void){
                 
                 printf("Alaniniz=%.2f",alan);
             }
-            
             
             else {
                 printf("Hacim hesaplanicak !"); printf("\nKenar uzunlugu giriniz:"); scanf("%lf",&kenar);
@@ -44,14 +38,9 @@ int main(void){
             
             
         case 2:
-            
-            
             printf("Silindir sectiniz !");
             printf("\nHacim icin:(h,H) Alan icin:(a,A) ");
             scanf("%s",&harf);
-            
-            
-            
             
             if((harf=='a') || (harf=='A')){
                 printf("Alan hesaplanicak !"); printf("\nYaricap uzunlugu giriniz:"); scanf("%f",&yaricap);
@@ -61,8 +50,6 @@ int main(void){
                 
                 printf("Alaniniz=%.2f",alan);
             }
-            
-            
             else{
                 printf("Hacim hesaplanicak !"); printf("\nYaricap uzunlugu giriniz:"); scanf("%f",&yaricap);
                 printf("\nYukseklik giriniz:"); scanf("%f",&yukseklik);
@@ -73,15 +60,10 @@ int main(void){
             break;
             
         case 3:
-            
-            
             printf("Kure sectiniz !");
             printf("\nHacim icin:(h,H) Alan icin:(a,A) ");
             scanf("%s",&harf);
-            
-            
-            
-            
+           
             if((harf=='a') || (harf=='A')){
                 printf("Alan hesaplanicak !"); printf("\nYaricap uzunlugu giriniz:"); scanf("%f",&yaricap);
                 
@@ -89,7 +71,6 @@ int main(void){
                 
                 printf("Alaniniz=%.2f",alan);
             }
-            
             
             else{
                 printf("Hacim hesaplanicak !"); printf("\nYaricap uzunlugu giriniz:"); scanf("%f",&yaricap);
@@ -102,14 +83,9 @@ int main(void){
             
             
         case 4:
-            
-            
             printf("Koni sectiniz !");
             printf("\nHacim icin:(h,H) Alan icin:(a,A) ");
             scanf("%s",&harf);
-            
-            
-            
             
             if((harf=='a') || (harf=='A')){
                 printf("Alan hesaplanicak !"); printf("\nYaricap uzunlugu giriniz:"); scanf("%f",&yaricap);
@@ -119,8 +95,6 @@ int main(void){
                 
                 printf("Alaniniz=%.2f",alan);
             }
-            
-            
             else{
                 printf("Hacim hesaplanicak !"); printf("\nYaricap uzunlugu giriniz:"); scanf("%f",&yaricap);
                 printf("\nYukseklik giriniz:"); scanf("%f",&yukseklik);
@@ -137,9 +111,6 @@ int main(void){
             printf("\nHacim icin:(h,H) Alan icin:(a,A) ");
             scanf("%s",&harf);
             
-            
-            
-            
             if((harf=='a') || (harf=='A')){
                 printf("Alan hesaplanicak !"); printf("\n Genislik uzunlugunu giriniz:"); scanf("%lf",&genislik);
                 printf("\n Kenar uzunlugu giriniz:"); scanf("%lf",&kenar);
@@ -149,8 +120,6 @@ int main(void){
                 
                 printf("Alaniniz=%.2f",alan);
             }
-            
-            
             else{
                 printf("Hacim hesaplanicak !"); printf("\n Genislik uzunlugu giriniz:"); scanf("%lf",&genislik);
                 printf("\n Kenar uzunlugu giriniz:"); scanf("%lf",&kenar);
@@ -160,16 +129,11 @@ int main(void){
                 printf("Hacminiz=%2.f",hacim);
             }
             break;
-            
-            
         case 6:
             printf("Ucgen Prizma sectiniz !");
             printf("\nHacim icin:(h,H) Alan icin:(a,A) ");
             scanf("%s",&harf);
-            
-            
-            
-            
+      
             if((harf=='a') || (harf=='A')){
                 printf("Alan hesaplanicak !"); printf("\n b kenarini giriniz:"); scanf("%f",&b);
                 printf("\n c kenarini giriniz:"); scanf("%f",&c);
@@ -179,8 +143,6 @@ int main(void){
                 
                 printf("Alaniniz=%.2f",alan);
             }
-            
-            
             else{
                 printf("Hacim hesaplanicak !"); printf("\n b kenarini giriniz:"); scanf("%f",&b);
                 printf("\n c kenarini giriniz:"); scanf("%f",&c);
@@ -193,14 +155,9 @@ int main(void){
             
             
         case 7:
-            
-            
             printf("Kare Prizma sectiniz !");
             printf("\nHacim icin:(h,H) Alan icin:(a,A) ");
             scanf("%s",&harf);
-            
-            
-            
             
             if((harf=='a') || (harf=='A')){
                 printf("Alan hesaplanicak !"); printf("\n Kenar uzunlugu giriniz:"); scanf("%lf",&kenar);
@@ -211,8 +168,6 @@ int main(void){
                 
                 printf("Alaniniz=%.2f",alan);
             }
-            
-            
             else{
                 printf("Hacim hesaplanicak !"); printf("\n Kenar uzunlugu giriniz:"); scanf("%lf",&kenar);
                 printf("\nYukseklik giriniz:"); scanf("%f",&yukseklik);
