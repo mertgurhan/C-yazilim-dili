@@ -1,0 +1,231 @@
+#include<stdio.h>
+#include<math.h>
+#define PI 3.14
+
+
+int main(void){
+
+    int sayi;
+    float yukseklik,yaricap,b,c;
+    double kenar,alan,hacim,genislik;
+    char harf;
+    printf("Lutfen hesaplamak istediginiz geometirk sekli seciniz:");
+    printf("\n 1.Kup\n 2.Silindir\n 3.Kure\n 4.Koni\n 5.Dikdortgen prizma\n 6.Ucgen Prizma\n 7.Kare Prizma\n");
+    scanf("%d",&sayi);
+    
+    switch(sayi){
+            
+        case 1:
+            
+            printf("Kup sectiniz !");
+            printf("\nHacim icin:(h,H) Alan icin:(a,A) ");
+            scanf("%c",&harf);
+            
+            
+            
+            
+            if((harf=='a') || (harf=='A')){
+                printf("Alan hesaplanicak !"); printf("\nKenar uzunlugu giriniz:"); scanf("%lf",&kenar);
+                
+                alan=pow(kenar,2);
+                
+                printf("Alaniniz=%.2f",alan);
+            }
+            
+            
+            else {
+                printf("Hacim hesaplanicak !"); printf("\nKenar uzunlugu giriniz:"); scanf("%lf",&kenar);
+                
+                
+                hacim=pow(kenar,3);
+                printf("Hacminiz=%2.f",hacim);
+            }
+            break;
+            
+            
+        case 2:
+            
+            
+            printf("Silindir sectiniz !");
+            printf("\nHacim icin:(h,H) Alan icin:(a,A) ");
+            scanf("%s",&harf);
+            
+            
+            
+            
+            if((harf=='a') || (harf=='A')){
+                printf("Alan hesaplanicak !"); printf("\nYaricap uzunlugu giriniz:"); scanf("%f",&yaricap);
+                printf("\nYukseklik giriniz:"); scanf("%f",&yukseklik);
+                
+                alan=2*(PI*pow(yaricap,2))+2*(PI*yaricap*yukseklik);
+                
+                printf("Alaniniz=%.2f",alan);
+            }
+            
+            
+            else{
+                printf("Hacim hesaplanicak !"); printf("\nYaricap uzunlugu giriniz:"); scanf("%f",&yaricap);
+                printf("\nYukseklik giriniz:"); scanf("%f",&yukseklik);
+                
+                hacim=PI*(pow(yaricap,2)*yukseklik);
+                printf("Hacminiz=%2.f",hacim);
+            }
+            break;
+            
+        case 3:
+            
+            
+            printf("Kure sectiniz !");
+            printf("\nHacim icin:(h,H) Alan icin:(a,A) ");
+            scanf("%s",&harf);
+            
+            
+            
+            
+            if((harf=='a') || (harf=='A')){
+                printf("Alan hesaplanicak !"); printf("\nYaricap uzunlugu giriniz:"); scanf("%f",&yaricap);
+                
+                alan=4*(PI*pow(yaricap,2));
+                
+                printf("Alaniniz=%.2f",alan);
+            }
+            
+            
+            else{
+                printf("Hacim hesaplanicak !"); printf("\nYaricap uzunlugu giriniz:"); scanf("%f",&yaricap);
+                
+                hacim=4/3*(PI*pow(yaricap,3));
+                
+                printf("Hacminiz=%2.f",hacim);
+            }
+            break;
+            
+            
+        case 4:
+            
+            
+            printf("Koni sectiniz !");
+            printf("\nHacim icin:(h,H) Alan icin:(a,A) ");
+            scanf("%s",&harf);
+            
+            
+            
+            
+            if((harf=='a') || (harf=='A')){
+                printf("Alan hesaplanicak !"); printf("\nYaricap uzunlugu giriniz:"); scanf("%f",&yaricap);
+                printf("\nYukseklik giriniz:"); scanf("%f",&yukseklik);
+                
+                alan=PI*(yaricap*sqrt(pow(yaricap,2)+pow(yukseklik,2)))+PI*pow(yaricap,2);
+                
+                printf("Alaniniz=%.2f",alan);
+            }
+            
+            
+            else{
+                printf("Hacim hesaplanicak !"); printf("\nYaricap uzunlugu giriniz:"); scanf("%f",&yaricap);
+                printf("\nYukseklik giriniz:"); scanf("%f",&yukseklik);
+                
+                hacim=PI*(pow(yaricap,2)*yukseklik)/2;
+                printf("Hacminiz=%2.f",hacim);
+            }
+            break;
+            
+            
+        case 5:
+            
+            printf("Dikdortgen Prizma sectiniz!");
+            printf("\nHacim icin:(h,H) Alan icin:(a,A) ");
+            scanf("%s",&harf);
+            
+            
+            
+            
+            if((harf=='a') || (harf=='A')){
+                printf("Alan hesaplanicak !"); printf("\n Genislik uzunlugunu giriniz:"); scanf("%lf",&genislik);
+                printf("\n Kenar uzunlugu giriniz:"); scanf("%lf",&kenar);
+                printf("\nYukseklik giriniz:"); scanf("%f",&yukseklik);
+                
+                alan=2*(kenar*yukseklik+yukseklik*genislik+kenar*genislik);;
+                
+                printf("Alaniniz=%.2f",alan);
+            }
+            
+            
+            else{
+                printf("Hacim hesaplanicak !"); printf("\n Genislik uzunlugu giriniz:"); scanf("%lf",&genislik);
+                printf("\n Kenar uzunlugu giriniz:"); scanf("%lf",&kenar);
+                printf("\nYukseklik giriniz:"); scanf("%f",&yukseklik);
+                
+                hacim=kenar*yukseklik*genislik;
+                printf("Hacminiz=%2.f",hacim);
+            }
+            break;
+            
+            
+        case 6:
+            printf("Ucgen Prizma sectiniz !");
+            printf("\nHacim icin:(h,H) Alan icin:(a,A) ");
+            scanf("%s",&harf);
+            
+            
+            
+            
+            if((harf=='a') || (harf=='A')){
+                printf("Alan hesaplanicak !"); printf("\n b kenarini giriniz:"); scanf("%f",&b);
+                printf("\n c kenarini giriniz:"); scanf("%f",&c);
+                printf("\nYukseklik giriniz:"); scanf("%f",&yukseklik);
+                
+                alan=b*c+(sqrt(pow(c,2)+pow(b,2))+b+c)+yukseklik;
+                
+                printf("Alaniniz=%.2f",alan);
+            }
+            
+            
+            else{
+                printf("Hacim hesaplanicak !"); printf("\n b kenarini giriniz:"); scanf("%f",&b);
+                printf("\n c kenarini giriniz:"); scanf("%f",&c);
+                printf("\nYukseklik giriniz:"); scanf("%f",&yukseklik);
+                
+                hacim=yukseklik*(b*c)/2;
+                printf("Hacminiz=%2.f",hacim);
+            }
+            break;
+            
+            
+        case 7:
+            
+            
+            printf("Kare Prizma sectiniz !");
+            printf("\nHacim icin:(h,H) Alan icin:(a,A) ");
+            scanf("%s",&harf);
+            
+            
+            
+            
+            if((harf=='a') || (harf=='A')){
+                printf("Alan hesaplanicak !"); printf("\n Kenar uzunlugu giriniz:"); scanf("%lf",&kenar);
+                
+                printf("\nYukseklik giriniz:"); scanf("%f",&yukseklik);
+                
+                alan=4*(kenar*yukseklik)+2*pow(kenar,2);
+                
+                printf("Alaniniz=%.2f",alan);
+            }
+            
+            
+            else{
+                printf("Hacim hesaplanicak !"); printf("\n Kenar uzunlugu giriniz:"); scanf("%lf",&kenar);
+                printf("\nYukseklik giriniz:"); scanf("%f",&yukseklik);
+                
+                hacim=pow(kenar,2)*yukseklik;
+                printf("Hacminiz=%2.f",hacim);
+            }
+            break;
+            
+        default:
+            printf("!!Yanlis Kod Girdiniz!!");
+            
+    }
+
+    return(0);
+}
